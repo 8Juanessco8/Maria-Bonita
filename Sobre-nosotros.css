@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .logo img {
+    height: 50px;
+}
+
+header .logo{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Maria-bonita{
+    background-color: rgb(139, 221, 180);
+    display: flex;
+    justify-content:center ;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+h1{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Imagen-tienda{
+    position:relative;
+        top: 0;
+        left: 0;
+        height: 600px;
+        width: 562px;
+        object-fit:cover;
+        border-radius: 10px;
+
+}
+
+.Linea{
+    background-color: rgb(139, 221, 180);
+    display: flex;
+    justify-content:center ;
+}
+
+.Logos{
+display: flex;
+justify-content: space-around;
+}
+
+.Logo-IG{
+    width: 60px;
+}
+
+.Logo-GMAIL{
+    width: 70px;
+}
+
+
+footer {
+    background-color: rgb(139, 221, 180);
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+}

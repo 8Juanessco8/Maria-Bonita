@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .logo img {
+    height: 50px;
+}
+
+header .logo{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Maria-bonita{
+    background-color: rgb(139, 221, 180);
+    display: flex;
+    justify-content:center ;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.Principal{ 
+    flex: 1;
+    background-image: url('https://th.bing.com/th/id/R.376f22fda2d9b256910f9925a2db1d0c?rik=iGnMmMLMU87hJg&pid=ImgRaw&r=0');
+    animation: move 10s linear infinite;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 2em;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    10%, 40% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    60%, 90% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.WhatsApp-icon{
+    height: 165px;
+    width: 95px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 50;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.shop-button {
+    background-color: #ff4081;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: rgb(139, 221, 180);
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+}

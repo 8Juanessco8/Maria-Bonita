@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .logo{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Maria-bonita{
+    background-color: rgb(139, 221, 180);
+    display: flex;
+    justify-content:center ;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+/*
+PONER IMAGENES Y ESTILOS A LOS PRODUCTOS
+*/
+
+footer {
+    background-color: rgb(139, 221, 180);
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+}
