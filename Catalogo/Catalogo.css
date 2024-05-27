@@ -1,10 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f8f8;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+}
+
 
 header .logo img {
     height: 50px;
@@ -23,39 +33,14 @@ header .logo{
     justify-content:center ;
     
 }
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-}
-
-header nav ul li a {
-    color: #000;
-    text-decoration: none;
-}
-
-.most-sold {
-    text-align: center;
-    padding: 2em;
-}
-
-.most-sold h2 {
-    font-size: 2em;
-    color: #4a4a4a;
-}
-
-.most-sold p {
-    color: #7a7a7a;
-}
-
 .products {
+    height: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;  
 }
 
 .product {
-    background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1em;
@@ -63,6 +48,7 @@ header nav ul li a {
     text-align: center;
     width: 200px;
     position: relative;
+    align-items: center;
 }
 
 .product img {
@@ -70,83 +56,17 @@ header nav ul li a {
     border-radius: 10px;
 }
 
-.product .offer {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    
-    color: white;
-    padding: 0.2em 0.5em;
-    border-radius: 5px;
-    font-size: 0.8em;
-    animation-name: girar;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; 
-    animation-timing-function: linear;
-}
-
-@keyframes girar {
-    from {
-      transform: rotate(0deg); 
-    }
-    to {
-      transform: rotate(360deg); 
-    }
-  }
-  
-
-.product .category {
-    color: #9a9a9a;
-    margin: 0.5em 0;
-}
 
 .product h3 {
     font-size: 1.2em;
     color: #4a4a4a;
+    
 }
 
-.product .price {
-    font-size: 1em;
-    color: #4a4a4a;
+a {
+    text-decoration: none;
+    color: #000;
 }
-
-.product .old-price {
-    text-decoration: line-through;
-    color: #9a9a9a;
-    margin-right: 0.5em;
-}
-
-.product button {
-    background-color: rgb(139, 221, 180);
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.product button:hover {
-    background-color: #b87b66;
-}
-
-.view-all {
-    background-color: #4a4a4a;
-    color: white;
-    border: none;
-    padding: 0.7em 2em;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 2em;
-}
-
-.ver-todo{
-    color: white;
-}
-
-.view-all:hover {
-    background-color: #333;
-}
-
 
 footer {
     background-color: rgb(139, 221, 180);
