@@ -72,7 +72,7 @@ header nav ul li a {
     padding: 1em;
     text-align: center;
     width: 200px;
-    height: 280px;
+    height: 365px;
     position: relative;
 }
 
@@ -121,24 +121,21 @@ header nav ul li a {
     color: #4a4a4a;
 }
 
-.product .old-price {
-    text-decoration: line-through;
-    color: #9a9a9a;
-    margin-right: 0.5em;
+
+
+.WhatsApp-icon{
+    height: 165px;
+    width: 95px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 50;
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 
-.product button {
-    background-color: rgb(139, 221, 180);
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.product button:hover {
-    background-color: #b87b66;
-}
 
 .view-all {
     background-color: #4a4a4a;
