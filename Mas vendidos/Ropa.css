@@ -20,8 +20,6 @@ header .logo img {
 header .logo img {
     border-radius: 50%;
     height: 50px;
-    position: relative;
-    left: -35px;
 }
 
 header .logo{

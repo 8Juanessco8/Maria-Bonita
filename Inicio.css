@@ -22,8 +22,7 @@ body {
 header .logo img {
     border-radius: 50%;
     height: 50px;
-    position: relative;
-    left: -33px;
+    
 }
 
 header .logo{
