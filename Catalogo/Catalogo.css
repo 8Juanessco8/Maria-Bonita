@@ -6,18 +6,22 @@
 
 html, body {
     height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
-
 
 header .logo img {
     height: 50px;
+    position: relative;
+    left: -46px;
 }
 
 header .logo{
@@ -27,29 +31,68 @@ header .logo{
     align-items: center;
 }
 
+
 .Maria-bonita{
     background-color: rgb(139, 221, 180);
     display: flex;
     justify-content:center ;
     
 }
-.products {
-    height: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
+
+.Logo-MB{
+border-radius: 50%;
+
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 
+.Categoria{
+    display:flex;
+    justify-content: center;
+
+}
+
+
+.Mejores{
+display: flex;
+justify-content: center;
+}
+
+
+.MB{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
 .product {
+    background-color: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1em;
-    padding: 1em;
+    padding: 20px;
     text-align: center;
     width: 200px;
-    position: relative;
-    align-items: center;
 }
+
 
 .product img {
     max-width: 100%;
@@ -58,23 +101,37 @@ header .logo{
 
 
 .product h3 {
-    font-size: 1.2em;
-    color: #4a4a4a;
-    
+    margin-top: 10px;
+    font-size: 18px;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
 
 footer {
     background-color: rgb(139, 221, 180);
-    position: absolute;
-    bottom: 0;
+    min-height: 70px;
     width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;  
+}
+
+
+@media (max-width: 600px) {
+    header .logo h3 {
+        font-size: 18px;
+    }
+
+    header .Maria-bonita h1 {
+        font-size: 24px;
+    }
+
+    .product {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }

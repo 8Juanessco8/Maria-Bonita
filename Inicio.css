@@ -10,24 +10,30 @@ body {
     padding: 0;
 }
 
-header .logo img {
-    height: 50px;
-}
-
-header .logo{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.LogoMB{
+    border-radius: 50%;
 }
 
 
 .Maria-bonita{
     background-color: rgb(139, 221, 180);
+}
+
+header .logo img {
+    border-radius: 50%;
+    height: 50px;
+    position: relative;
+    left: -33px;
+}
+
+header .logo{
+    background-color: white;
     display: flex;
-    justify-content:center ;
+    justify-content: space-between ;
+    align-items: center;
     
 }
+
 
 header .logo a {
     margin-left: 20px;
